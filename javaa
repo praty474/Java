@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+
+public class TryCatch{
+    public static void main(String[]args){
+
+        try{
+            ArrayList<String> names = new ArrayList<>();
+            names.add("Pratyush");
+            names.add("Ram");
+            names.add("Ramesh");
+
+
+            System.out.println(names);
+
+            System.out.println(names.get(0));
+            System.out.println("This size is "+names.size());
+
+
+            names.add("Cat");
+            System.out.println(names.get(3));
+            System.out.println("This size is "+names.size());
+
+        }
+        catch(Exception ex){
+            System.out.println("Not available");
+        }
+        finally{
+            display();
+        }
+    }
+    public static void display() {
+        System.out.println("The program had ended sucesfully");
+        
+    }
+}
